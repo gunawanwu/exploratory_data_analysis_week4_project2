@@ -19,7 +19,7 @@ baltimore_data <- NEI_data[NEI_data$fips=="24510", ]
 baltimore_data_year <- aggregate(Emissions ~ year, baltimore_data, sum)
 
 # plot2.png
-png(filename='plot2.png')
+png("plot2.png")
 
 cols <- c("red", "orange", "yellow", "light blue")
 barplot(height=baltimore_data_year$Emissions/1000, names.arg=baltimore_data_year$year, xlab="Year", ylab=expression('Total Emission (tons)'),main=expression('Baltimore Total PM'[2.5]*' Emissions by Year'), col = cols)

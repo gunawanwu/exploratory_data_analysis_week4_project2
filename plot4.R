@@ -24,8 +24,8 @@ colnames(coal_emissions_year) <- c("year", "emissions")
 #load ggplot2 library
 library(ggplot2)
 
-## create a plot showing coal related emissions across the US from 1999-2008
-png(filename = "plot4.png")
+# plot4.png
+png("plot4.png")
 
 plot(coal_emissions_year$year, coal_emissions_year$emissions, type = "o",
      xlab = "Year",

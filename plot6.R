@@ -25,7 +25,7 @@ colnames(baltLA_car_year) <- c("City", "Year", "Emissions")
 library(ggplot2)
 
 # plot6.png
-png(filename = "plot6.png")
+png("plot6.png")
 
 qplot(Year, Emissions, data = baltLA_car_year, color = City, geom = "line") +
         ggtitle("Emissions of PM2.5 in Baltimore City (24510) and LA County (06037)") + 
